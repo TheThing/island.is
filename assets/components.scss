@@ -1,0 +1,50 @@
+
+nav {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+
+  .filler {
+    flex-grow: 2;
+  }
+
+  a {
+    font-size: 18px;
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: 5px top;
+    display: block;
+
+    &.logo {
+      background-image: url('logo.png');
+      background-size: contain;
+      text-indent: -9999px;
+      padding: 0;
+      width: 180px;
+      height: 52px
+    }
+
+    &.submissions {
+      background-image: url('header-submissions.svg');
+      background-size: auto 21px;
+    }
+
+    &.logout {
+      background-image: url('header-logout.svg');
+      background-size: auto 21px;
+      margin-left: 20px;
+    }
+  }
+}
+
+header {
+  margin: 20px 20px 50px;
+  text-align: center;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  
+  p {
+    margin-top: 25px;
+  }
+}

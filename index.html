@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Island.is</title>
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="Stylesheet" href="assets/app.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="maincontainer">
+    <separator>Component test</separator>
+    <page>
+      <nav>
+        <a class="logo" href="#">island.is</a>
+        <div class="filler"></div>
+        <a class="submissions">Mínar umsóknir</a>
+        <a class="logout">Útskráning</a>
+      </nav>
+      <header>
+        <h1>Ferðasali dagsferða - einstaklingur</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu commodo massa et urna non. Sed in pellentesque pretium pretium turpis auctor a </p>
+      </header>
+      <formgroup>
+        <formtitle>
+          <h3>Umsækjandi</h3>
+          <p>Þetta er umsækjandinn og upplýsingar um hann birtist hér</p>
+        </formtitle>
+        <formrow>
+          <formitem>
+            <h5>Netfang</h5>
+            <span>Skrifaðu inn netfangið þitt</span>
+            <input type="text" placeholder="jonatan@island.is">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <h5>Staðfesta</h5>
+            <input class="success" type="text" value="jonatan@island.is">
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+        <formrow>
+          <formitem>
+            <h5>Ekki hægt að breyta</h5>
+            <span>Skrifaðu inn netfangið þitt</span>
+            <input type="text" readonly="true" placeholder="jonatan@island.is">
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+      </formgroup>
+      <formgroup>
+        <formtitle>
+          <h3>Forsvaramaður</h3>
+        </formtitle>
+        <formrow>
+          <formitem>
+            <h5>Fullt nafn</h5>
+            <span>Þú getur ekki breytt þessu</span>
+            <input class="error" type="text" value="Jonatan Nilsson">
+            <span class="error">Aðvörun, nafnið er lame.</span>
+          </formitem>
+          <formitem>
+            <h5>Fullt nafn aftur</h5>
+            <input class="valid" type="text" value="Jonatan Nilsson">
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+        <formrow>
+          <formitem class="area">
+            <h5>Hvað gerðir þú í dag</h5>
+            <textarea placeholder="Nefndu heiti starfseminnar"></textarea>
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+        <formrow>
+          <formitem class="radios">
+            <h5>Starfsstöð</h5>
+            <input type="radio" id="idtest1" name="test1">
+            <label for="idtest1">
+              Föst starfsstöð
+              <span></span>
+            </label>
+            <input type="radio" id="idtest2" name="test1">
+            <label for="idtest2">
+              Rafræn þjónusta
+              <span></span>
+            </label>
+            <span class="error">Þú verður að velja</span>
+          </formitem>
+        </formrow>
+
+        <formrow>
+          <formitem class="checks">
+            <h5>Merktu við það sem er viðeigandi</h5>
+            <span>Hægt er að merkja við marga</span>
+            <input type="checkbox" id="idcheck1">
+            <label for="idcheck1">
+              Umsækjandi selur eigin ferðir beint til ferðamanna
+              <span></span>
+            </label>
+            <input type="checkbox" id="idcheck2">
+            <label for="idcheck2">
+              Ferðir umsækjenda eru seldar af öðrum ferðaþjónustuaðilum
+              <span></span>
+            </label>
+            <formitem class="subitem">
+              <h5>Hverjir selja ferðir fyrir umsækjanda</h5>
+              <span>Tilgreina þarf upplýsingar</span>
+              <textarea placeholder="Útskýrðu hér"></textarea>
+            </formitem>
+            <input type="checkbox" id="idcheck2">
+            <label for="idcheck2">
+              Umsækjandi selur ferðir
+              <span></span>
+            </label>
+          </formitem>
+        </formrow>
+
+        <formrow>
+          <formitem>
+            <h5>Heiti ferðar</h5>
+            <span>&nbsp;</span>
+            <input type="text" placeholder="Heiti ferðar">
+          </formitem>
+          <formitem>
+            <h5>Lengd</h5>
+            <span>&nbsp;</span>
+            <input type="text" placeholder="Lengd">
+          </formitem>
+          <formitem>
+            <h5>Tegund</h5>
+            <span>&nbsp;</span>
+            <input type="text" placeholder="Tegund">
+          </formitem>
+        </formrow>
+        <formrow>
+          <formitem>
+            <input type="text" placeholder="Heiti ferðar">
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Lengd">
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Tegund">
+          </formitem>
+        </formrow>
+        <formrow>
+          <button class="additem">
+            <span>Bæta við ferð</span>
+          </button>
+        </formrow>
+      </formgroup>
+    </page>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <separator>Skref 1</separator>
+    <page>
+      <nav>
+        <a class="logo" href="#">island.is</a>
+        <div class="filler"></div>
+        <a class="submissions">Mínar umsóknir</a>
+        <a class="logout">Útskráning</a>
+      </nav>
+      <header>
+        <h1>Ferðasali dagsferða - einstaklingur</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu commodo massa et urna non. Sed in pellentesque pretium pretium turpis auctor a </p>
+      </header>
+      <formgroup>
+        <formtitle>
+          <h3>Umsækjandi</h3>
+          <p>Jón Jónsson, Dúfnahólar 10, 210 Reykjavíkurborg </p>
+        </formtitle>
+        <formrow>
+          <formitem>
+            <h5>Netfang</h5>
+            <input type="text" placeholder="Netfangið þitt">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <h5>Símanúmer</h5>
+            <input class="success" type="text" value="Símanúmerið þitt">
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+      </formgroup>
+
+      <formgroup>
+        <formtitle>
+          <h3>Forsvaramaður</h3>
+        </formtitle>
+        <formrow>
+          <formitem>
+            <h5>Kennitala</h5>
+            <input type="text" placeholder="Kennitala">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <h5>Netfang</h5>
+            <input type="text" placeholder="Netfang">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <h5>Símanúmer</h5>
+            <input type="text" placeholder="Símanúmer">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <h5>Nafn</h5>
+            <input type="text" placeholder="Nafn" readonly>
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+        <formrow>
+          <formitem>
+            <h5>Heimilisfang lögheimilis</h5>
+            <input type="text" placeholder="Lögheimili">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Póstnúmer">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Staður">
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+      </formgroup>
+
+      <formgroup>
+        <formtitle>
+          <h3>Upplýsingar um starfsemina</h3>
+        </formtitle>
+        <formrow>
+          <formitem class="area">
+            <h5>Heiti starfseminar / hjáheiti</h5>
+            <textarea placeholder="Nefndu heiti starfseminnar"></textarea>
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+
+        <formrow>
+          <formitem class="radios">
+            <h5>Starfsstöð</h5>
+            <input type="radio" id="step1group1item1" name="step1group1">
+            <label for="step1group1item1">
+              Föst starfsstöð
+              <span></span>
+            </label>
+            <input type="radio" id="step1group1item2" name="step1group1">
+            <label for="step1group1item2">
+              Rafræn þjónusta
+              <span></span>
+            </label>
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+
+        <formrow>
+          <formitem>
+            <h5>Heimilisfang starfstöðvar</h5>
+            <input type="text" placeholder="Lögheimili">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Póstnúmer">
+            <span class="error"></span>
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Staður">
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+
+        <formrow>
+          <formitem>
+            <h5>Vefsíða eða önnur rafræn kynningasíða</h5>
+            <input type="text" placeholder="http://www.vefslod.is">
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+      </formgroup>
+
+      <formgroup class="addbottom">
+        <formtitle>
+          <h3>Lýsing á starfssemi</h3>
+        </formtitle>
+        <formrow>
+          <formitem class="area">
+            <h5>Nákvæm lýsing á starfssemi</h5>
+            <textarea placeholder="Nefndu heiti starfseminnar"></textarea>
+            <span class="error"></span>
+          </formitem>
+        </formrow>
+
+        <formrow>
+          <formitem>
+            <h5>Heiti ferðar</h5>
+            <span>&nbsp;</span>
+            <input type="text" placeholder="Heiti ferðar">
+          </formitem>
+          <formitem>
+            <h5>Lengd</h5>
+            <span>&nbsp;</span>
+            <input type="text" placeholder="Lengd">
+          </formitem>
+          <formitem>
+            <h5>Tegund</h5>
+            <span>&nbsp;</span>
+            <input type="text" placeholder="Tegund">
+          </formitem>
+        </formrow>
+        <formrow>
+          <formitem>
+            <input type="text" placeholder="Heiti ferðar">
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Lengd">
+          </formitem>
+          <formitem>
+            <input type="text" placeholder="Tegund">
+          </formitem>
+        </formrow>
+        <formrow>
+          <button class="additem">
+            <span>Bæta við ferð</span>
+          </button>
+        </formrow>
+      </formgroup>
+
+      <formgroup>
+        <formtitle>
+          <h3>Fyrirkomulag á sölu ferða</h3>
+        </formtitle>
+        <formrow>
+          <formitem class="checks">
+            <h5>Merktu við það sem er viðeigandi</h5>
+            <span>Hægt er að merkja við fleiri einn valmöguleika</span>
+            <input type="checkbox" id="page1check1">
+            <label for="page1check1">
+              Umsækjandi selur eigin ferðir beint til ferðamanna
+              <span></span>
+            </label>
+            <input type="checkbox" id="page1check2">
+            <label for="page1check2">
+              Ferðir umsækjenda eru seldar af öðrum ferðaþjónustuaðilum
+              <span></span>
+            </label>
+            <formitem class="subitem">
+              <h5>Hverjir selja ferðir fyrir umsækjanda og um hvernig ferðir er að ræða? </h5>
+              <span>Tilgreina skal alla þá aðila sem umsækjandi selur ferðir  fyrir eða hyggst selja ferðir fyrir og upplýsa um hvers konar ferðir er að ræða.</span>
+              <textarea placeholder="Útskýrðu hér"></textarea>
+            </formitem>
+            <input type="checkbox" id="page1check3">
+            <label for="page1check3">
+              Umsækjandi selur ferðir fyrir aðra ferðaþjónustuaðila
+              <span></span>
+            </label>
+          </formitem>
+        </formrow>
+      </formgroup>
+
+      <formgroup>
+        <formtitle>
+          <h3>Yfirlýsingar</h3>
+        </formtitle>
+        <formrow>
+          <formitem class="checks">
+            <h5>Merkið við þær yfirlýsingar sem þú samþykkir</h5>
+            <input type="checkbox" id="page1check4">
+            <label for="page1check4">
+              Að upplýsingar skv. umsókn þessari verði nýttar í þágu rannsókna og kannana sem varða þróun ferðaþjónustunnar á vegum og/eða í samstarfi við Ferðamálastofu
+              <span></span>
+            </label>
+            <input type="checkbox" id="page1check5">
+            <label for="page1check5">
+              Að upplýsingar um starfsemina birtist á ferðavefum s.s. InspiredbyIceland.com, ferdalag.is og landshlutavefum markaðsstofanna
+              <span></span>
+            </label>
+            <input type="checkbox" id="page1check6">
+            <label for="page1check6">
+              Að fá sendar fréttir á rafrænu formi frá Ferðamálastofu
+              <span></span>
+            </label>
+          </formitem>
+        </formrow>
+      </formgroup>
+    </page>
+  </div>
+</body>
+</html>
